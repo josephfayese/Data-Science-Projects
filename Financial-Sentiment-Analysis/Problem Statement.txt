@@ -1,0 +1,74 @@
+FINANCIAL SENTIMENT ANALYSIS TOOL
+==================================
+
+Problem Statement:
+------------------
+Bitcoin and foreign exchange markets (specifically USD/NGN in Nigeria) are highly sensitive to
+policy announcements, regulatory changes, economic news, and social media sentiment. Traders and
+investors need real-time insights into how news and social media discussions might impact these
+asset prices.
+
+Currently, there is no comprehensive tool that:
+1. Automatically collects relevant news from multiple sources (news feeds, Twitter, blogs)
+2. Analyzes sentiment and potential market impact
+3. Correlates sentiment with actual price movements
+4. Provides actionable insights for Bitcoin and USD/NGN trading decisions
+
+Business Objective:
+-------------------
+Develop an automated sentiment analysis tool that:
+- Monitors news feeds, Twitter/X, and financial blogs for Bitcoin and Nigeria FX-related content
+- Extracts and analyzes sentiment from policies and announcements
+- Tracks real-time Bitcoin and USD/NGN price data
+- Correlates sentiment scores with price movements
+- Generates alerts and insights for potential market impacts
+
+Target Users:
+-------------
+- Cryptocurrency traders and investors
+- FX traders focused on Nigerian Naira
+- Financial analysts and researchers
+- Policy makers and regulators
+
+Key Features:
+-------------
+1. Multi-source data collection (News APIs, Twitter, RSS feeds)
+2. Natural Language Processing for sentiment analysis
+3. Real-time price tracking (Bitcoin, USD/NGN)
+4. Sentiment-price correlation analysis
+5. Automated alert system for significant events
+6. Historical data analysis and visualization
+7. Customizable keywords and sources
+
+Data Sources:
+-------------
+- News APIs (NewsAPI, Alpha Vantage News)
+- Twitter/X API for social media sentiment
+- RSS feeds from major financial blogs
+- Bitcoin price data (CoinGecko, Binance, yfinance)
+- USD/NGN exchange rate data (CBN, forex APIs)
+
+Technical Approach:
+-------------------
+1. Data Collection: Multi-threaded scrapers for continuous monitoring
+2. Text Preprocessing: Cleaning, tokenization, entity recognition
+3. Sentiment Analysis: VADER, TextBlob, and transformer models (FinBERT)
+4. Feature Engineering: Time-based features, sentiment scores, volume metrics
+5. Correlation Analysis: Statistical correlation between sentiment and prices
+6. Visualization: Interactive dashboards with Plotly/Dash
+
+Success Metrics:
+----------------
+- Accuracy of sentiment classification (>80%)
+- Correlation coefficient between sentiment and price movements (>0.5)
+- Timeliness of data collection (within 5 minutes of publication)
+- Coverage of relevant news sources (>90% of major announcements)
+- Alert precision (low false positive rate)
+
+Expected Outcomes:
+------------------
+- Real-time sentiment dashboard
+- Historical sentiment-price correlation database
+- Automated alert system
+- API for integration with trading systems
+- Weekly sentiment reports
